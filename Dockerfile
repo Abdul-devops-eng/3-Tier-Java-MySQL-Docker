@@ -1,4 +1,4 @@
-FROM FROM eclipse-temurin:17-jdk-alpine AS build
+FROM eclipse-temurin:17-jdk-alpine AS build
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ RUN apk update && apk add maven
 
 RUN mvn package
 
-FROM FROM eclipse-temurin:17-jdk-alpine
+FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
